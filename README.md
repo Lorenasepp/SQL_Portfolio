@@ -2,11 +2,7 @@
 A portfolio showcasing my SQL skills.
 
 
-SQL Portfolio:
-This portfolio showcases the steps I take to analyze data using SQL.
-
-
-Project One: Consumer Complaints
+[Project One: Consumer Complaints](https://github.com/Lorenasepp/Lorenasepp/blob/c99bf7c8eb438a18f1f3d4c94579a3020746c64c/SQL%20Portfolio)
 
   For this project I wanted to find out the top three companies with the most complaints, the top three products with the most complaints, and how the companies compare.
     
