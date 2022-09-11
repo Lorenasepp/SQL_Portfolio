@@ -80,7 +80,7 @@ A portfolio showcasing my SQL skills.
 
 
 
-[Project Two: Consumer Complaints 2]
+[Project Two: Consumer Complaints 2](https://github.com/Lorenasepp/project2/blob/main/Portfolio%20project2)
 
 For my second project, I used the same database as project one, Consumer Complaints.
 For this project, my goal was to see what the top ten companies with the most complaints are for the state of California for mortgages.
