@@ -77,3 +77,52 @@ A portfolio showcasing my SQL skills.
         A. The three companies with the most complaints are Bank of America, Wells Fargo, and JPMorgan Chase.
         B. The three products with the most complaints are mortgage, debt collecting, and credit reporting.
         C. All three of the companies had most frequently had problems with the same three products: mortgages, credit cards, and bank account and service.
+
+
+
+[Project Two: Consumer Complaints 2]
+
+For my second project, I used the same database as project one, Consumer Complaints.
+For this project, my goal was to see what the top ten companies with the most complaints are for the state of California for mortgages.
+
+    1. To start off I selected all of the information from the database. 
+ 
+        SELECT *
+        FROM consumer_complaints;
+
+    2. Next I needed to filter my results by what I wanted to find out.
+       I only wanted to see the results for California and for mortgages. 
+
+        SELECT *
+        FROM consumer_complaints
+        WHERE state = 'CA'
+        AND product = 'Mortgage';
+
+    3.  My results were narrowed down to show what I wanted to see, but needed to be sorted into order to show the results I wanted. 
+
+         SELECT *, COUNT(company)
+         FROM consumer_complaints
+         WHERE state = 'CA'
+         AND product = 'Mortgage'
+         GROUP BY company
+         ORDER BY COUNT(company) DESC
+         LIMIT 10;
+
+       With this query I was able to count how many times a company had a complaint, group the companies together, and see the company with the most complaints on top.
+       If I wanted to see the companies with the least complaints I would erase the DESC. 
+
+    4. I now know the companies with the most complaints about their mortgages in the state of California. 
+       If I was making the descision to open a mortgage account with one of those companies, I could run another query like this next one:
+
+        SELECT *
+        FROM consumer_complaints
+        WHERE state = 'CA'
+        AND product = 'Mortgage'
+        AND company = ' ';   *// insert company name
+ 
+       This query would let me see all of the issues pertaining to the company. 
+       For this example I used Bank of America. 
+       My results showed that even though Bank of America had the most complaints, looking through all the information on the table I would be comfortable opening an account with them. 
+         - Bank of America is one of the biggest banks in the country so it makes sense they would also have more complaints. They have many customers.
+         - They more often had a timely response than not showing they have good customer service. 
+         - For the customer disputed disputed column, the frequency of any customer disputes was low, showing they have good customer service. 
