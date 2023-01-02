@@ -169,3 +169,28 @@ Objective: Determine the combine two tables to find the movie category for movie
   Babel	Action
   Fury	Action
   Mr. and Mrs. Smith	Action
+
+[Project Four: ROUND, MAX, MIN, and CASE](https://github.com/Lorenasepp/SQL_Portfolio/commit/4df8edb316c8cf81932088ac364962bd0d9ebe8b)
+My fourth project demostrates my skills using ROUND, MAX, MIN, and CASE functions.
+
+Objective: Categorize countries into three categories based off country size.
+/*Data from kaggle.com*/
+
+    1. First, using a data table from kaggle, I rounded the average populations to find the whole number.
+            SELECT ROUND(AVG(population)) AS avg_population FROM countries;
+
+    2.Then I found the country with the smallest population:
+            SELECT name, MIN(population) AS lowest_population FROM countries;
+
+    3. Thirdly I found the country with the largest population:
+            SELECT name, MAX(population) AS max_population FROM countries;
+
+    4. Lastly I set parameters for my three categories I wanted to group the countries by:
+           SELECT COUNT(*),
+           CASE
+             WHEN percent_of_world_pop > 1 THEN "Large"
+             WHEN percent_of_world_pop > 0.01 THEN "Average"
+             ELSE "Small"
+           END AS country_size 
+           FROM countries
+           GROUP BY country_size;
