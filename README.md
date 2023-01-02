@@ -174,7 +174,8 @@ Objective: Determine the combine two tables to find the movie category for movie
 My fourth project demostrates my skills using ROUND, MAX, MIN, and CASE functions.
 
 Objective: Categorize countries into three categories based off country size.
-/*Data from kaggle.com*/
+/*Data from 
+ http://www.worldometers.info/world-population/population-by-country/*/
 
     1. First, using a data table from kaggle, I rounded the average populations to find the whole number.
             SELECT ROUND(AVG(population)) AS avg_population FROM countries;
