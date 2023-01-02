@@ -126,3 +126,6 @@ For this project, my goal was to see what the top ten companies with the most co
          - Bank of America is one of the biggest banks in the country so it makes sense they would also have more complaints. They have many customers.
          - They more often had a timely response than not showing they have good customer service. 
          - For the customer disputed disputed column, the frequency of any customer disputes was low, showing they have good customer service. 
+         
+         
+[Project Three: Creating and Joining Tables](https://github.com/Lorenasepp/SQL_Portfolio/blob/main/Project%20Three) 
