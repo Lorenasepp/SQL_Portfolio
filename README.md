@@ -170,7 +170,7 @@ Objective: Determine the combine two tables to find the movie category for movie
   Fury	Action
   Mr. and Mrs. Smith	Action
 
-[Project Four: ROUND, MAX, MIN, and CASE](https://github.com/Lorenasepp/SQL_Portfolio/commit/4df8edb316c8cf81932088ac364962bd0d9ebe8b)
+[Project Four: ROUND, MAX, MIN, AS and CASE](https://github.com/Lorenasepp/SQL_Portfolio/commit/4df8edb316c8cf81932088ac364962bd0d9ebe8b)
 My fourth project demostrates my skills using ROUND, MAX, MIN, and CASE functions.
 
 Objective: Categorize countries into three categories based off country size.
