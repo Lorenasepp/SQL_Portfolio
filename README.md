@@ -135,40 +135,40 @@ Objective: Determine the combine two tables to find the movie category for movie
 
   1. First I created two tables. The first table showing the actor name and the the movie category they are most commenly associated with. The second table shows a numerical id for each acotr and movie title.
 
-  CREATE TABLE actors (id INTEGER PRIMARY KEY AUTOINCREMENT, fullname TEXT, category TEXT);
-  INSERT INTO actors (fullname, category) VALUES ("Brad Pitt", "Action");
-  INSERT INTO actors (fullname, category) VALUES ("Tom Cruise", "Action");
-  INSERT INTO actors (fullname, category) VALUES ("Jennifer Aniston", "Drama");
-  INSERT INTO actors (fullname, category) VALUES ("Tina Fey", "Comedy"); 
+          CREATE TABLE actors (id INTEGER PRIMARY KEY AUTOINCREMENT, fullname TEXT, category TEXT);
+          INSERT INTO actors (fullname, category) VALUES ("Brad Pitt", "Action");
+          INSERT INTO actors (fullname, category) VALUES ("Tom Cruise", "Action");
+          INSERT INTO actors (fullname, category) VALUES ("Jennifer Aniston", "Drama");
+          INSERT INTO actors (fullname, category) VALUES ("Tina Fey", "Comedy"); 
 
-  CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT, actor_id INTEGER, title TEXT);
-  INSERT INTO movies (actor_id, title) VALUES (1, "Mr. and Mrs. Smith");
-  INSERT INTO movies (actor_id, title) VALUES (1, "Fury");
-  INSERT INTO movies (actor_id, title) VALUES (2, "Jack Reacher");
-  INSERT INTO movies (actor_id, title) VALUES (2, "Top Gun");
-  INSERT INTO movies (actor_id, title) VALUES (3, "We're the Millers");
-  INSERT INTO movies (actor_id, title) VALUES (3, "Marley & me");
-  INSERT INTO movies (actor_id, title) VALUES (4, "Sisters");
-  INSERT INTO movies (actor_id, title) VALUES (4, "Mean Girls");
-  INSERT INTO movies (actor_id, title) VALUES (1, "Babel");
-  INSERT INTO movies (actor_id, title) VALUES (3, "Horrible Bosses");
-  INSERT INTO movies (actor_id, title) VALUES (2, "The Last Samurai");
+          CREATE TABLE movies (id INTEGER PRIMARY KEY AUTOINCREMENT, actor_id INTEGER, title TEXT);
+          INSERT INTO movies (actor_id, title) VALUES (1, "Mr. and Mrs. Smith");
+          INSERT INTO movies (actor_id, title) VALUES (1, "Fury");
+          INSERT INTO movies (actor_id, title) VALUES (2, "Jack Reacher");
+          INSERT INTO movies (actor_id, title) VALUES (2, "Top Gun");
+          INSERT INTO movies (actor_id, title) VALUES (3, "We're the Millers");
+          INSERT INTO movies (actor_id, title) VALUES (3, "Marley & me");
+          INSERT INTO movies (actor_id, title) VALUES (4, "Sisters");
+          INSERT INTO movies (actor_id, title) VALUES (4, "Mean Girls");
+          INSERT INTO movies (actor_id, title) VALUES (1, "Babel");
+          INSERT INTO movies (actor_id, title) VALUES (3, "Horrible Bosses");
+          INSERT INTO movies (actor_id, title) VALUES (2, "The Last Samurai");
 
   2. Then I used the two tables to show what category the movie titles most likely fall into based off Brad Pitts most common movie category.
 
-  SELECT movies.title, actors.category
-  From movies
-  Join actors
-  ON actors.id = movies.actor_id
-  WHERE actors.category = "Action"
-  AND actors.fullname = "Brad Pitt"
-  ORDER BY movies.title;
+          SELECT movies.title, actors.category
+          From movies
+          Join actors
+          ON actors.id = movies.actor_id
+          WHERE actors.category = "Action"
+          AND actors.fullname = "Brad Pitt"
+          ORDER BY movies.title;
 
   3. QUERY RESULTS
-  title	category
-  Babel	Action
-  Fury	Action
-  Mr. and Mrs. Smith	Action
+          title	                 category
+          Babel	                 Action
+          Fury	                 Action
+          Mr. and Mrs. Smith     Action
 
 [Project Four: ROUND, MAX, MIN, AS and CASE](https://github.com/Lorenasepp/SQL_Portfolio/commit/4df8edb316c8cf81932088ac364962bd0d9ebe8b)
 My fourth project demostrates my skills using ROUND, MAX, MIN, and CASE functions.
