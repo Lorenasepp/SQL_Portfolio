@@ -2,7 +2,7 @@
 A portfolio showcasing my SQL skills.
 
 
-[Project One: Consumer Complaints](https://github.com/Lorenasepp/Lorenasepp/blob/c99bf7c8eb438a18f1f3d4c94579a3020746c64c/SQL%20Portfolio)
+[Project One:GROUP BY, ORDER BY, and LIMITS](https://github.com/Lorenasepp/Lorenasepp/blob/c99bf7c8eb438a18f1f3d4c94579a3020746c64c/SQL%20Portfolio)
 
   For this project I wanted to find out the top three companies with the most complaints, the top three products with the most complaints, and how the companies compare.
     
@@ -80,7 +80,7 @@ A portfolio showcasing my SQL skills.
 
 
 
-[Project Two: Consumer Complaints 2](https://github.com/Lorenasepp/project2/blob/main/Portfolio%20project2)
+[Project Two: WHERE, AND/OR, and COUNT](https://github.com/Lorenasepp/project2/blob/main/Portfolio%20project2)
 
 For my second project, I used the same database as project one, Consumer Complaints.
 For this project, my goal was to see what the top ten companies with the most complaints are for the state of California for mortgages.
