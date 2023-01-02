@@ -177,7 +177,7 @@ Objective: Categorize countries into three categories based off country size.
 /*Data from 
  http://www.worldometers.info/world-population/population-by-country/*/
 
-    1. First, using a data table from kaggle, I rounded the average populations to find the whole number.
+    1. First, using data from www.worldometers.info, I rounded the average populations to find the average as a whole number:
             SELECT ROUND(AVG(population)) AS avg_population FROM countries;
 
     2.Then I found the country with the smallest population:
