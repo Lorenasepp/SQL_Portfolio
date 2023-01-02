@@ -133,7 +133,7 @@ My third project demostrates my skills creating tables from raw data and joining
 
 Objective: Determine the combine two tables to find the movie category for movies that Brad Pitt has acted in. 
 
-  1. First I created two tables. The first table showing the actor name and the the movie category they are most commenly associated with. The second table shows a numerical id for each acotr and movie title.
+  1. First I created two tables. The first table showing the actor name and the the movie category they are most commenly associated with. The second table shows a numerical id for each actor and movie title.
 
           CREATE TABLE actors (id INTEGER PRIMARY KEY AUTOINCREMENT, fullname TEXT, category TEXT);
           INSERT INTO actors (fullname, category) VALUES ("Brad Pitt", "Action");
