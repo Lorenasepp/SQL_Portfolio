@@ -195,3 +195,23 @@ Objective: Categorize countries into three categories based off country size.
            END AS country_size 
            FROM countries
            GROUP BY country_size;
+           
+           
+[Project Five: Update and Delete](https://github.com/Lorenasepp/SQL_Portfolio/blob/main/UPDATE%20and%20DELETE)
+  My fifth project demonstrates my skills altering a table after it has been created by using UPDATE and DELETE
+  
+      1. First, I created and added values to a table to show possible user name and scores for a game.
+          CREATE TABLE game 
+                  (id INTEGER PRIMARY KEY, user_name TEXT, score INTEGER);
+
+              INSERT INTO game VALUES (1, "winner32", "6841168");
+              INSERT INTO game VALUES (2, "master", "78325168");
+              INSERT INTO game VALUES (3, "fly_boys", "84268265");
+              INSERT INTO game VALUES (4, "apprent", "345845");
+              
+      2. Next I altered the table to show a chage to the user name "apprent":
+          UPDATE game SET user_name = "new_user" WHERE user_name = "apprent";
+          
+      3. Finally, I deleted row three from the table:
+      
+           DELETE FROM game WHERE id = 3;
