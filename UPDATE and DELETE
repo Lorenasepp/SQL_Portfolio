@@ -1,0 +1,17 @@
+CREATE TABLE game 
+    (id INTEGER PRIMARY KEY, user_name TEXT, score INTEGER);
+    
+INSERT INTO game VALUES (1, "winner32", "6841168");
+INSERT INTO game VALUES (2, "master", "78325168");
+INSERT INTO game VALUES (3, "fly_boys", "84268265");
+INSERT INTO game VALUES (4, "apprent", "345845");
+
+SELECT * FROM game;
+
+UPDATE game SET user_name = "new_user" WHERE user_name = "apprent";
+
+SELECT * FROM game;
+
+DELETE FROM game WHERE id = 3;
+
+SELECT *  FROM game;
